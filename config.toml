@@ -76,12 +76,6 @@ disableHugoGeneratorInject = true
     weight     = -111
 
   [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/projects/"
-    weight     = -30
-
-  [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about/"

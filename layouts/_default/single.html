@@ -18,17 +18,6 @@
       {{ .Content }}
       {{ if eq .Type "posts" }}
       {{ end }}
-      {{ if eq .Title "Projects" }}
-      <ul class="list">
-        {{ range where .Site.Pages.ByDate.Reverse "Section" "projects" }}
-          {{ if ne .Kind "section" }}
-          <li>
-            <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-          </li>
-          {{ end }}
-        {{ end }}
-      </ul>
-      {{ end }}
       {{ if eq .Title "Photos" }}
       <ul class="list photos">
         {{ range where .Site.Pages.ByDate.Reverse "Section" "photos" }}
